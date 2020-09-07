@@ -1,6 +1,31 @@
-  
-  footer {
-    min-width: 100%;
-    text-align: center;
-    display: block;
+footer {
+  min-width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+@media (max-width: 630px) {
+  .cross {
+    position: static;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    width: 75px;
+    height: auto;
+    margin: 0 auto;
   }
+}
+
+@media (min-width: 400px) {
+  .cross {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    font-family: fantasy;
+    font-size: 24px;
+  }
+}

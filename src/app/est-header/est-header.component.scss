@@ -1,22 +1,18 @@
 @import '../../styles.scss';
 
-#header {
-    width: 100%;
-    margin-bottom: 5rem;
-    position: fixed;
-    z-index: 99999;
-  }
+.header {
+  width: 100%;
+  margin-bottom: 5rem;
+  position: fixed;
+  z-index: 99999;
   
-  #site-title {
+  .site-title {
     font-size: 1.3rem;
     font-weight: 600;
-  }
-  
-  #site-title > a {
     color: $base;
   }
   
-  #res-nav {
+  .res-nav {
     width: 30px;
     height: 30px;
     position: fixed;
@@ -31,117 +27,139 @@
     top: 2rem;
     right: 2rem;
     z-index: 999999;
-  }
   
-  #res-nav span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: $base;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
-  }
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: $base;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+    }
   
-  #res-nav span:nth-child(1) {
-    top: 0px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-  }
+    span:nth-child(1) {
+      top: 0px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
   
-  #res-nav span:nth-child(2) {
-    top: 9px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-  }
+    span:nth-child(2) {
+      top: 9px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
   
-  #res-nav span:nth-child(3) {
-    top: 18px;
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center;
-  }
+    span:nth-child(3) {
+      top: 18px;
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      -o-transform-origin: left center;
+      transform-origin: left center;
+    }
   
-  #res-nav.open span:nth-child(1) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: -4px;
-    left: 8px;
-  }
+    .open span:nth-child(1) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: -4px;
+      left: 8px;
+    }
   
-  #res-nav.open span:nth-child(2) {
-    width: 0%;
-    opacity: 0;
-  }
+    .open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
   
-  #res-nav.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    top: 17px;
-    left: 7px;
+    .open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 17px;
+      left: 7px;
+    }
   }
+}
   
-  #main-navigation {
-    position: fixed;
-    visibility: hidden;
-    top: -3000px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: $white;
-    z-index: 99999;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    -webkit-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
-    -moz-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
-    -o-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
-    -ms-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
-    transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
-  }
-  
-  #main-navigation.open {
+.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $white;
+  z-index: 99999;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
+  -moz-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
+  -o-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
+  transition: top 0.5s cubic-bezier(0, 0, 0.2, 1);
+
+  &.open {
     display: flex;
-    visibility: visible;
     align-items: center;
     justify-content: center;
     top: 0;
     left: 0;
   }
   
-  #main-navigation a {
+  a {
     text-decoration: none;
     margin-right: 0.4em;
     font-size: 2.3rem;
-  }
   
-  #main-navigation a:hover {
+    &:hover {
+      color: $active;
+      background: repeating-linear-gradient( 45deg, transparent, transparent 10px, $border 10px, $border 20px);
+    }
+
+  
+    .active-nav-selection {
+      color: $border;
+
+      &:hover {
+        background: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px) {
+  .main-navigation.open {
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    padding: 2em;
+  }
+  .main-navigation>.nav-links>a {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  .main-navigation a:hover {
     color: $active;
-    background: repeating-linear-gradient( 45deg, transparent, transparent 10px, $border 10px, $border 20px);
+    background: transparent;
   }
-  
-  #main-navigation>#nav-links>a.active-nav-selection {
-    color: $border;
-  }
-  
-  #main-navigation>#nav-links>a.active-nav-selection:hover {
-    background: none;
-  }
+}

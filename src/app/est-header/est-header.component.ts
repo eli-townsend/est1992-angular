@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./est-header.component.scss']
 })
 export class EstHeaderComponent implements OnInit {
+  navShow = false;
+ 
+  navToggle() {
+    this.navShow = !this.navShow;
+  }
 
   constructor() { }
 

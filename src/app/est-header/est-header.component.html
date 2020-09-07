@@ -1,17 +1,19 @@
-<div id="header">
-    <div id="site-title">Est.1992</div>
+<div class="header">
+    <div class="site-title">Est.1992</div>
 
-    <div id="res-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+    <a href="#" (click)="navToggle()">
+        <div class="res-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </a>
 </div>
 
-<div id="main-navigation">
-    <div id="nav-links">
+<div *ngIf="navShow" class="main-navigation">
+  <div class="nav-links">
         <a href="index.html" class="active-nav-selection">Home</a>
         <a href="workshop.html">Workshop</a>
         <a href="journal.html">Journal</a>
-    </div>
+  </div>
 </div>
