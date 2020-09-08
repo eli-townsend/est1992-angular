@@ -1,7 +1,7 @@
 <div class="header">
     <div class="site-title">Est.1992</div>
 
-    <a href="#" (click)="navToggle()">
+    <a (click)="navToggle()">
         <div class="res-nav" [ngClass]="{'open' : navShow}">
             <span></span>
             <span></span>
@@ -12,8 +12,8 @@
 
 <div *ngIf="navShow" class="main-navigation" [ngClass]="{'open' : navShow}">
   <div class="nav-links">
-        <a href="index.html" class="active-nav-selection">Home</a>
-        <a href="workshop.html">Workshop</a>
-        <a href="journal.html">Journal</a>
+        <a routerLink="/home" class="active-nav-selection">Home</a>
+        <a>Workshop</a>
+        <a>Journal</a>
   </div>
 </div>

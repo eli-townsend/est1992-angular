@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +9,25 @@ import { Title } from '@angular/platform-browser';
 })
 
 export class AppComponent {
-  title = 'est1992-ang';
+  constructor(titleService: Title, router: Router) {
+    router.events.subscribe(event => {
+      if(event instanceof NavigationEnd) {
+        var title = this.getTitle(router.routerState, router.routerState.root).join('-');
+        console.log('title', title);
+        titleService.setTitle(title);
+      }
+    });
+  }
 
-  public constructor(private titleService: Title ) { }
+  getTitle(state, parent) {
+    var data = [];
+    if(parent && parent.snapshot.data && parent.snapshot.data.title) {
+      data.push(parent.snapshot.data.title);
+    }
 
-  public setTitle( newTitle: string) {
-    this.titleService.setTitle( newTitle );
+    if(state && parent) {
+      data.push(... this.getTitle(state, state.firstChild(parent)));
+    }
+    return data;
   }
 }
