@@ -2,7 +2,7 @@
     <div class="site-title">Est.1992</div>
 
     <a href="#" (click)="navToggle()">
-        <div class="res-nav">
+        <div class="res-nav" [ngClass]="{'open' : navShow}">
             <span></span>
             <span></span>
             <span></span>
@@ -10,7 +10,7 @@
     </a>
 </div>
 
-<div *ngIf="navShow" class="main-navigation">
+<div *ngIf="navShow" class="main-navigation" [ngClass]="{'open' : navShow}">
   <div class="nav-links">
         <a href="index.html" class="active-nav-selection">Home</a>
         <a href="workshop.html">Workshop</a>

@@ -9,7 +9,7 @@ $white: #FFFFFF;
 $base: #BFBFBF;
 $active: #00CC66;
 $hover: #008040;
-$border: #CCCCCC;
+$light-grey: #CCCCCC;
 ```
 
 

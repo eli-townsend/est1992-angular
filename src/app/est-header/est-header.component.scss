@@ -1,7 +1,7 @@
 @import '../../styles.scss';
 
 .header {
-  width: 100%;
+  width: $est-percent-100;
   margin-bottom: 5rem;
   position: fixed;
   z-index: 99999;
@@ -10,6 +10,8 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: $base;
+    padding-top: 10px;
+    padding-left: 16px;
   }
   
   .res-nav {
@@ -32,7 +34,7 @@
       display: block;
       position: absolute;
       height: 3px;
-      width: 100%;
+      width: $est-percent-100;
       background: $base;
       border-radius: 9px;
       opacity: 1;
@@ -71,7 +73,7 @@
       transform-origin: left center;
     }
   
-    .open span:nth-child(1) {
+    &.open span:nth-child(1) {
       -webkit-transform: rotate(45deg);
       -moz-transform: rotate(45deg);
       -o-transform: rotate(45deg);
@@ -80,12 +82,12 @@
       left: 8px;
     }
   
-    .open span:nth-child(2) {
+    &.open span:nth-child(2) {
       width: 0%;
       opacity: 0;
     }
   
-    .open span:nth-child(3) {
+    &.open span:nth-child(3) {
       -webkit-transform: rotate(-45deg);
       -moz-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
@@ -100,10 +102,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: $est-percent-100;
+  height: $est-percent-100;
   background: $white;
-  z-index: 99999;
+  z-index: 99998;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -128,12 +130,12 @@
   
     &:hover {
       color: $active;
-      background: repeating-linear-gradient( 45deg, transparent, transparent 10px, $border 10px, $border 20px);
+      background: repeating-linear-gradient( 45deg, transparent, transparent 10px, $light-grey 10px, $light-grey 20px);
     }
 
   
     .active-nav-selection {
-      color: $border;
+      color: $light-grey;
 
       &:hover {
         background: none;
@@ -153,13 +155,18 @@
     left: 0;
     padding: 2em;
   }
-  .main-navigation>.nav-links>a {
-    display: block;
-    width: 100%;
-    margin-bottom: 1em;
-  }
-  .main-navigation a:hover {
-    color: $active;
-    background: transparent;
+  .main-navigation {
+    .nav-links{ 
+      a {
+        display: block;
+        width: $est-percent-100;
+        margin-bottom: 1em;
+
+        &:hover {
+          color: $active;
+          background: transparent;
+        }
+      }
+    }
   }
 }
