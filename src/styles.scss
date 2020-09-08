@@ -4,7 +4,6 @@ $base: #BFBFBF;
 $active: #00CC66;
 $hover: #008040;
 $light-grey: #CCCCCC;
-
 $est-percent-100: 100%;
 
 // Main Font
@@ -18,7 +17,6 @@ $est-percent-100: 100%;
 
 body {
   padding: 1em;
-  float: none;
   margin: 0;
   background: url(../src/assets/images/tree_bark.png);
   color: $light-grey;
@@ -36,8 +34,6 @@ body {
   font-weight: 200;
   margin: 0 auto;
   padding: 1em;
-  display: flex;
-  align-items: stretch;
   width: $est-percent-100;
   height: auto;
 }
@@ -268,33 +264,33 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.25rem;
   margin-bottom: 3em;
-}
 
-h1.center {
-  margin-top: 2em;
-}
+  .center {
+    margin-top: 2em;
+  }
 
-h1.process-header {
-  margin-bottom: 1em;
-  margin-top: 3em;
-  text-align: center;
+  .process-header {
+    margin-bottom: 1em;
+    margin-top: 3em;
+    text-align: center;
+  }
 }
 
 a {
   color: $active;
   text-decoration: none;
-}
 
-a:hover {
-  color: $hover;
+  &:hover {
+    color: $hover;
+  }
 }
 
 p {
   line-height: 1.8rem;
-}
 
-p.tiny {
-  font-weight: 100;
+  .tiny {
+    font-weight: 100;
+  }
 }
 
 

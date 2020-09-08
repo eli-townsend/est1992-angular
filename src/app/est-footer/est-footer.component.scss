@@ -1,10 +1,17 @@
 footer{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
 }
 
-.footer {
-  min-width: 100%;
+.copy {
   text-align: center;
-  display: flex;
-  justify-content: center;
+  flex: 1;
+}
+
+.cross {
+  font-family: fantasy;
+  font-size: 24px;
 }
