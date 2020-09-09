@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from '../../projects/home-page/home-page.component';
+import { JournalComponent } from '../../projects/journal/journal.component';
 
 const routes: Routes = [
   { 
@@ -13,6 +14,12 @@ const routes: Routes = [
     path: 'home', 
     component: HomePageComponent, 
     data: {title: 'Est.1992 - Elijah Townsend'} 
+  },
+  
+  { 
+    path: 'journal', 
+    component: JournalComponent, 
+    data: {title: 'Est.1992 - Journal'} 
   },
 ];
 
