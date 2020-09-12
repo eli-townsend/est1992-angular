@@ -65,7 +65,7 @@ video::-webkit-media-controls {
   background-color: $active;
   color: $white;
   -webkit-transform: translate3d(0, -100%,0);
-    transform: translate3d(0, -100%,0);
+  transform: translate3d(0, -100%,0);
   -webkit-transition:0.4s all ease;
   transition:0.4s all ease;
   opacity:0.9;
@@ -323,10 +323,28 @@ span.blog-date{
 
 /*** CODE ***/
 
-code{background: #eee; color:#3b3b3b; border-radius: 3px; padding: 2px 6px;}
-p > code.block{display: block;color: #209ddb;background: #333;width: 100%; height:auto; margin: 15px 0;padding:15px 5px;}
-p > code span.tag{color: #6BF178;}
-p > code span.property{color: #F2DD6E;}
+code{
+  background: #eee; 
+  color:#3b3b3b; 
+  border-radius: 3px; 
+  padding: 2px 6px;
+}
+
+p > code.block{
+  display: block;
+  color: #209ddb;
+  background: #333;
+  width: 100%; 
+  height:auto; 
+  margin: 15px 0;
+  padding:15px 5px;
+}
+p > code span.tag{
+  color: #6BF178;
+}
+p > code span.property{
+  color: #F2DD6E;
+}
 
 .contact-info {
   font-size: 4vw;
