@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from '../../projects/home-page/home-page.component';
 import { JournalComponent } from '../../projects/journal/journal.component';
+import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { 
