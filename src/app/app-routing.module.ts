@@ -22,6 +22,12 @@ const routes: Routes = [
     component: JournalComponent, 
     data: {title: 'Est.1992 - Journal'} 
   },
+
+  {
+    path: '**', 
+    component: PageNotFoundComponent,
+    data: {title: 'Est.1992 - 404'} 
+  }
 ];
 
 
