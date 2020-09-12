@@ -16,13 +16,12 @@ $est-percent-100: 100%;
 }
 
 body {
-  padding: 1em;
-  margin: 0;
   background: url(../src/assets/images/tree_bark.png);
   color: $light-grey;
   font-family: gt_walsheim_regular;
+  padding: 1em;
+  margin: 0;
   word-wrap: break-word;
-  height: 100%;
 }
 
 .container {
@@ -33,10 +32,10 @@ body {
   font-family: gt_walsheim_regular;
   font-size: 1.1rem;
   font-weight: 200;
+  height: auto;
   margin: 0 auto;
   padding: 1em;
   width: $est-percent-100;
-  min-height: calc(100vh - 2em);
 }
 
 
@@ -297,30 +296,30 @@ p {
 
 /*** BLOG ***/
 
-.blog-post{
-  margin-bottom: 80px;
-}
+// .blog-post{
+//   margin-bottom: 80px;
+// }
 
-.blog-post > p{
-    margin-bottom: 30px;
-}
+// .blog-post > p{
+//     margin-bottom: 30px;
+// }
 
-span.blog-date{
-  font-size: 60%;
-  float: right;
-}
+// span.blog-date{
+//   font-size: 60%;
+//   float: right;
+// }
 
-.blog-content{
-  margin-bottom: 50px;
-}
+// .blog-content{
+//   margin-bottom: 50px;
+// }
 
-@media(max-width: 680px){
-  span.blog-date{
-    font-size: 60%;
-    float: none;
-    display: block;
-  }
-}
+// @media(max-width: 680px){
+//   span.blog-date{
+//     font-size: 60%;
+//     float: none;
+//     display: block;
+//   }
+// }
 
 /*** CODE ***/
 
