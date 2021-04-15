@@ -9,6 +9,7 @@ import { EstComponentsComponent } from '../../projects/est-components/est-compon
 import { EstFooterComponent } from './est-footer/est-footer.component';
 import { EstHeaderComponent } from './est-header/est-header.component';
 import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
+import { BlogBlurbComponent } from '../../projects/est-components/blog-blurb/blog-blurb.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-fo
     EstFooterComponent,
     EstHeaderComponent,
     JournalComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BlogBlurbComponent
   ],
   imports: [
     BrowserModule,

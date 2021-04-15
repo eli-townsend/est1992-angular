@@ -1,8 +1,9 @@
 // Tokens
 $white: #FFFFFF;
+$black: #000000;
 $base: #BFBFBF;
-$active: #00CC66;
-$hover: #008040;
+$active: #ffff00;
+$hover: #1687a7;
 $light-grey: #CCCCCC;
 $est-percent-100: 100%;
 
@@ -16,77 +17,26 @@ $est-percent-100: 100%;
 }
 
 body {
-  padding: 1em;
-  margin: 0;
-  background: url(../src/assets/images/tree_bark.png);
+  background: $white;
   color: $light-grey;
   font-family: gt_walsheim_regular;
+  padding: 1em 2em;
+  margin: 0;
   word-wrap: break-word;
-  height: 100%;
 }
 
 .container {
   background: $white;
   border-radius: 5px;
   box-sizing: border-box;
-  color: $base;
+  color: $black;
   font-family: gt_walsheim_regular;
   font-size: 1.1rem;
   font-weight: 200;
+  height: auto;
   margin: 0 auto;
   padding: 1em;
   width: $est-percent-100;
-  min-height: calc(100vh - 2em);
-}
-
-
-video{
-  width: $est-percent-100 !important;
-  height: auto !important;
-}
-video::-webkit-media-controls {
-    display:none !important;
-}
-
-.video {
-  position:relative;
-  overflow:hidden;
-  // background-image: url('../img/desktop1.jpg');
-  height: 400px;
-  width: 600px;
-}
-
-.video .video-overlay {
-  position:absolute;
-  top:0px;
-  left:0px;
-  right:0px;
-  bottom:0px;
-  z-index:30;
-  background-color: $active;
-  color: $white;
-  -webkit-transform: translate3d(0, -100%,0);
-  transform: translate3d(0, -100%,0);
-  -webkit-transition:0.4s all ease;
-  transition:0.4s all ease;
-  opacity:0.9;
-  padding:0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.video .video-overlay a {
-  color: $white;
-  font-size: 2em;
-  display: block;
-  text-align: center;
-  padding-top: 50%;
-  width: $est-percent-100;
-  height: $est-percent-100;
-}
-.video:hover > .video-overlay {
-  -webkit-transform: translate3d(0, 0%,0);
-    transform: translate3d(0, 0%, 0);
 }
 
 /*** SECTIONS ***/
@@ -104,23 +54,8 @@ video::-webkit-media-controls {
   text-align: center;
 }
 
-.clear-fix {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.sbreak {
-  height: 150px;
-  margin-bottom: 150px;
-}
-
-.nbreak {
-  margin-bottom: 150px;
-}
-
 a.button-white {
-  border: 2px solid $base;
+  border: 2px solid $black;
   background: $white;
   color: $active;
   width: auto;
@@ -130,20 +65,22 @@ a.button-white {
 
 button, a.button {
   background: $white;
-  color: $active;
+  border: 5px solid $black;
+  color: $black;
   width: auto;
   padding: 12px 20px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 button:hover, a.button:hover {
-  background: $active;
-  color: $hover;
+  background: $black;
+  color: $white;
 }
 
 a.button.secondary {
   background: $active;
-  color: $white;
+  color: $black;
   width: auto;
   padding: 12px 20px;
   border-radius: 5px;
@@ -151,7 +88,7 @@ a.button.secondary {
 
 a.button.secondary:hover {
   background: $active;
-  color: $hover;
+  color: $black;
 }
 
 
@@ -170,7 +107,7 @@ a.button.secondary:hover {
 
 li.circular-color {
   border-radius: 50%;
-  border: 1px solid $base;
+  border: 1px solid $black;
   width: 50px;
   height: 50px;
 }
@@ -232,7 +169,7 @@ img {
 
 img.max-img {
   margin-top: 100px;
-  border-top: 3px solid $base;
+  border-top: 3px solid $black;
 }
 
 .grayscale-hover>.one-half.columns {
@@ -259,7 +196,7 @@ img.max-img {
 h1, h2, h3, h4, h5, h6 {
   font-family: gt_walsheim_regular;
   font-weight: 600;
-  color: $base;
+  color: $black;
 }
 
 h1 {
@@ -278,15 +215,29 @@ h1 {
 }
 
 a {
-  color: $active;
+  background: $active;
+  color: $black;
+  padding: 5px 10px;
   text-decoration: none;
+  transition: 0.3s;
 
   &:hover {
-    color: $hover;
+    color: $black;
+    box-shadow:
+            1px 1px $black,
+            2px 2px $black,
+            3px 3px $black;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
   }
 }
 
 p {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+  font-size: 14px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400;
   line-height: 1.8rem;
 
   .tiny {
@@ -297,30 +248,30 @@ p {
 
 /*** BLOG ***/
 
-.blog-post{
-  margin-bottom: 80px;
-}
+// .blog-post{
+//   margin-bottom: 80px;
+// }
 
-.blog-post > p{
-    margin-bottom: 30px;
-}
+// .blog-post > p{
+//     margin-bottom: 30px;
+// }
 
-span.blog-date{
-  font-size: 60%;
-  float: right;
-}
+// span.blog-date{
+//   font-size: 60%;
+//   float: right;
+// }
 
-.blog-content{
-  margin-bottom: 50px;
-}
+// .blog-content{
+//   margin-bottom: 50px;
+// }
 
-@media(max-width: 680px){
-  span.blog-date{
-    font-size: 60%;
-    float: none;
-    display: block;
-  }
-}
+// @media(max-width: 680px){
+//   span.blog-date{
+//     font-size: 60%;
+//     float: none;
+//     display: block;
+//   }
+// }
 
 /*** CODE ***/
 
