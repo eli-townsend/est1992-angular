@@ -1,102 +1,74 @@
 @import '../../src/styles.scss';
 
-#desktop {
+h1.mi-nombre {
+  font-size: 9.25rem;
+  margin-bottom: -5rem;
+  position: relative;
+  z-index: 2;
+}
+
+img.foto-de-viaje {
+  width: 75%;
   height: auto;
-  width: $est-percent-100;
-  max-width: 600px;
-  background: rgba(191, 191, 191, 0.7);
-  padding-bottom: 15px;
-  margin: 0 auto;
-  border: 1px solid $light-grey;
-  border-radius: 5px;
 }
 
-.desktop-circles {
-  list-style: none;
-  margin: 0 0 5px 5px;
-  padding: 0;
+h2 {
+  font-size: 6rem;
 }
 
-.desktop-circles > li {
-  display: inline-block;
-  margin-right: 1px;
+h3 {
+  font-size: 4rem;
+  line-height: 6rem;
+
+  &.donde-esta {
+    border-top: 10px solid $black;
+    font-size: 8rem;
+    line-height: 8rem;
+    margin-top: 35%;
+    text-align: right;
+  }
 }
 
-li.circular-corner {
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
+h4 {
+  font-size: 3rem;
+  line-height: 5rem;
+
+  &.bicicletas {
+    border-top: 10px solid $black;
+    font-size: 8rem;
+    line-height: 8rem;
+    margin-top: 35%;
+    text-align: left;
+  }
 }
 
-a.left-vert {
-  -ms-transform: rotate(270deg);
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-  display: inline-block;
-  margin-top: -250px;
-}
-
-a.right-vert {
-  -ms-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  display: inline-block;
+img.foto-de-bicicletas {
+  width: 50%;
+  height: auto;
   float: right;
-  margin-top: -250px;
+  margin-bottom: -10rem;
+  padding-left: 2rem;
+  padding-bottom: 9rem;
 }
 
-@media (max-width: 915px) {
-  #desktop {
-    margin-bottom: 1em;
-  }
-  a.left-vert {
-    -ms-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    display: inline-block;
-    float: left;
-    margin-top: 0;
-  }
-  a.right-vert {
-    -ms-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-    display: inline-block;
-    float: right;
-    margin-top: 0;
-  }
-  a.right-vert>i.fa-long-arrow-left {
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    display: inline-block;
-    float: right;
-    margin-left: 4px;
-    margin-top: 3px;
+h5 {
+  font-size: 3rem;
+  line-height: 5rem;
+  width: 75%;
+
+  &.contacto {
+    border-top: 10px solid $black;
+    font-size: 8rem;
+    line-height: 8rem;
+    margin-top: 35%;
+    text-align: center;
+    width: 100%;
   }
 }
 
-@media (max-width: 428px) {
-  a.left-vert, a.right-vert {
-    width: auto;
-    padding: 12px 5px;
-  }
-}
-
-@media (max-width: 630px) {
-  .contact-info {
-    font-size: 5vw;
-  }
-  .social-icons a {
-    margin-right: 0.4em;
-    font-size: 2rem;
-    text-decoration: none;
-  }
-  .sbreak {
-    height: 100px;
-    margin-bottom: 100px;
-  }
-  .nbreak {
-    margin-bottom: 50px;
-  }
+.datos-de-contacto {
+  clear: both;
+  font-size: 6rem;
+  line-height: 10rem;
+  text-align: center;
 }
