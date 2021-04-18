@@ -15,6 +15,7 @@ import { BorderLeftComponent } from '../../projects/journal/journal-post/border-
 import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/code-ws.component';
 import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
 import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
+import { WorkshopBlurbComponent } from '../../projects/est-components/workshop-blurb/workshop-blurb.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-re
     BorderLeftComponent,
     CodeWsComponent,
     FlexboxNavComponent,
-    WorkRemoteComponent
+    WorkRemoteComponent,
+    WorkshopBlurbComponent
   ],
   imports: [
     BrowserModule,
