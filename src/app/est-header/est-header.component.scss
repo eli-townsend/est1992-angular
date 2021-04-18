@@ -6,14 +6,6 @@
   position: fixed;
   z-index: 99999;
   
-  .site-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: $black;
-    padding-top: 10px;
-    padding-left: 16px;
-  }
-  
   .res-nav {
     width: 30px;
     height: 30px;
@@ -31,12 +23,12 @@
     z-index: 999999;
   
     span {
+      background: $black;
+      border-radius: 9px;
       display: block;
       position: absolute;
       height: 3px;
       width: $est-percent-100;
-      background: $black;
-      border-radius: 9px;
       opacity: 1;
       left: 0;
       -webkit-transform: rotate(0deg);
@@ -96,6 +88,14 @@
       left: 7px;
     }
   }
+  
+  a.hamburguesa {
+    background: none !important;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }
   
 .main-navigation {
@@ -129,16 +129,24 @@
     font-size: 2.3rem;
   
     &:hover {
-      color: $active;
-      background: repeating-linear-gradient( 45deg, transparent, transparent 10px, $light-grey 10px, $light-grey 20px);
+      color: $black;
+      box-shadow:
+        1px 1px $black,
+        2px 2px $black,
+        3px 3px $black;
+      -webkit-transform: translateX(-3px);
+      transform: translateX(-3px);
     }
 
   
     &.active-nav-selection {
       color: $light-grey;
+      background: $white;
 
       &:hover {
         background: none;
+        box-shadow: none;
+        cursor: default;
       }
     }
   }
@@ -153,19 +161,14 @@
     justify-content: center;
     top: 0;
     left: 0;
-    padding: 2em;
   }
   .main-navigation {
     .nav-links{ 
       a {
         display: block;
-        width: $est-percent-100;
         margin-bottom: 1em;
-
-        &:hover {
-          color: $active;
-          background: transparent;
-        }
+        text-align: center;
+        width: $est-percent-100;
       }
     }
   }
