@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./border-left.component.scss']
 })
 export class BorderLeftComponent implements OnInit {
+  testCode = `<html>`
 
   constructor() { }
 

@@ -203,6 +203,14 @@ h1 {
   }
 }
 
+h3.donde-esta {
+  border-top: 10px solid $black;
+  font-size: 8rem;
+  line-height: 8rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
 a {
   background: $active;
   color: $black;
@@ -287,7 +295,6 @@ p > code span.property{
   color: #F2DD6E;
 }
 
-
 @media (max-width: 550px) {
   .one-half.columns {
     margin-bottom: 0;
@@ -295,9 +302,6 @@ p > code span.property{
     border-radius: 5px;
   }
 }
-
-
-/* Larger than mobile */
 
 @media (min-width: 400px) {
   .one-half.columns {
@@ -389,21 +393,14 @@ p > code span.property{
 }
 
 .u-full-width {
-  width: $est-percent-100;
   box-sizing: border-box;
+  display: inline-block;
+  width: $est-percent-100;
 }
 
 .u-max-full-width {
-  max-width: $est-percent-100;
   box-sizing: border-box;
-}
-
-.u-pull-right {
-  float: right;
-}
-
-.u-pull-left {
-  float: left;
+  max-width: $est-percent-100;
 }
 
 @media (min-width: 400px) {
