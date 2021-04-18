@@ -7,8 +7,7 @@
 ```bash
 $white: #FFFFFF;
 $base: #BFBFBF;
-$active: #00CC66;
-$hover: #008040;
+$active: #ffff00;
 $light-grey: #CCCCCC;
 ```
 

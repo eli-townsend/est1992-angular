@@ -40,14 +40,14 @@
       <p> While this works for most users we wanted to make a note of accessibility about this solution. For example, if a user were to have a form of color blindness, you will need to vary the color so that it may be easily distinguishable from
       the rest of the input border, background color or any other styles that might be applied to your inputs. We will also put a transition on the initial state of the input so once on focus, there will be 0.3 seconds time to transition from 3 to
       6 pixels.</p>
-    <p><code class="block"><span class="tag">input.required, select.required, textarea.required, input:required, select:required, textarea:required {</span><br />
+    <p><code class="block"><span class="tag">input.required, select.required, textarea.required, input:required, select:required, textarea:required '{'</span><br />
 <span class="property">border-left:</span>#E96751 solid 3px;<br />
 <span class="property">-webkit-transition:</span> border 0.3s;<br />
 <span class="property">transition:</span> border 0.3s;<br />
-<span class="tag">}</span><br />
-<span class="tag">input[type=text].required:focus, input[type=date].required:focus, select.required:focus, textarea.required:focus{</span><br />
+<span class="tag">'}'</span><br />
+<span class="tag">input[type=text].required:focus, input[type=date].required:focus, select.required:focus, textarea.required:focus'{'</span><br />
 <span class="property">border-left:</span>#E96751 solid 6px;<br />
-<span class="tag">}</span><br />
+<span class="tag">'}'</span><br />
 </code></p>
     <p> If you use certain front-end frameworks, they will showcase errors, warnings, or success states differently, whether that be background color changed, border changed, etc. As a standard, we created this to work with validation so depending on
       which state the input is in, the border-left will depict that state with green for success or red for error. If the user is already aware of the border-left changing dynamically through validation, it gives users a sense of standard and consistent
