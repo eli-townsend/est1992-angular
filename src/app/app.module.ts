@@ -10,10 +10,10 @@ import { EstFooterComponent } from './est-footer/est-footer.component';
 import { EstHeaderComponent } from './est-header/est-header.component';
 import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
 import { BlogBlurbComponent } from '../../projects/est-components/blog-blurb/blog-blurb.component';
-import { BorderLeftComponent } from '../../projects/journal/journal-post/border-left/border-left.component';
-import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/code-ws.component';
-import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
-import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
+// import { BorderLeftComponent } from '../../projects/journal/journal-post/border-left/border-left.component';
+// import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/code-ws.component';
+// import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
+// import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +25,10 @@ import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-re
     JournalComponent,
     PageNotFoundComponent,
     BlogBlurbComponent,
-    BorderLeftComponent,
-    CodeWsComponent,
-    FlexboxNavComponent,
-    WorkRemoteComponent
+    // BorderLeftComponent,
+    // CodeWsComponent,
+    // FlexboxNavComponent,
+    // WorkRemoteComponent
   ],
   imports: [
     BrowserModule,
