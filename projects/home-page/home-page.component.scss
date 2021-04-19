@@ -72,3 +72,78 @@ h5 {
   line-height: 10rem;
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  h1.mi-nombre {
+    font-size: 4rem;
+    margin-bottom: -1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  img.foto-de-viaje {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    line-height: 4rem;
+  
+    &.donde-esta {
+      border-top: 10px solid $black;
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-top: 35%;
+      text-align: right;
+    }
+  }
+  
+  h4 {
+    font-size: 2rem;
+    line-height: 4rem;
+  
+    &.bicicletas {
+      border-top: 10px solid $black;
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-top: 35%;
+      text-align: left;
+    }
+  }
+  
+  img.foto-de-bicicletas {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-bottom: -6rem;
+    padding-left: 2rem;
+    padding-bottom: 9rem;
+  }
+  
+  h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 75%;
+  
+    &.contacto {
+      border-top: 10px solid $black;
+      font-size: 3rem;
+      line-height: 4rem;
+      margin-top: 35%;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  .datos-de-contacto {
+    clear: both;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+  }
+}
