@@ -1,0 +1,53 @@
+<blog-header postTitle="Flexbox Responsive Navigation"></blog-header>
+
+<div class="row">
+  <div class="twelve columns blog-content">
+    <p>
+      This is a story all about how my life got flipped turned upside down … Actually, it is not. This post is about showing you how I created my responsive flexbox menu on this site.
+    </p>
+
+    <img src="../../assets/images/flex-box.jpg" alt="flexbox nav example" />
+
+    <p>Here is our first step, including the HTML into our page.</p>
+
+    <p>
+      <code class="block">
+        {{flexboxNavHTML}}
+      </code>
+    </p>
+
+    <p>Second step is to include the CSS.</p>
+
+    <p>
+      <code class="block">
+        {{flexboxNavCSS}}
+      </code>
+    </p>
+
+    <p>
+      Let’s break down what is happening behind the scenes for this menu system. We have a header that is containing our logo and our responsive menu <a href="http://gizmodo.com/who-designed-the-iconic-hamburger-icon-1555438787" target="_blank">hamburger icon</a>. In a separate container <code>#main-navigation</code> that is displayed off the page, our menu links are housed. In stead of using <code>display: none;</code>, we hide the #main-navigation by setting the top position to <code>top: -3000px;</code> and the position to <code>position: fixed;</code> . To give the navigation the slide in transition, we set the transition to come in from the top at a half second. The easy solution to make the menu appear is we add the display property to the <code>.open</code> class. The <code>.open</code> class is now where we incorporate the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">flexbox layout</a>. 
+    </p>
+
+    <p>
+      If you have ever designed/developed a website, you know the frustrations of centering an element in the center vertically and horizontally on the page. Now with flexbox, it became very easy. With just this bit of code, you can accomplish the horizontal/vertical centering. 
+    </p>
+
+    <p>
+      Lastly, we will include the JavaScript to make the navigation function. 
+    </p>
+
+    <p>
+      <code class="block">
+        {{flexboxNavJS}}
+      </code>
+    </p>
+
+    <p>Here is the finished, working product</p>
+
+    <p data-height="400" data-theme-id="0" data-slug-hash="gGYvyW" data-default-tab="css,result" data-user="Eli-townsend" data-embed-version="2" data-pen-title="Flex Box Navigation" class="codepen">See the Pen <a href="https://codepen.io/Eli-townsend/pen/gGYvyW/">Flex Box Navigation</a> by Elijah Townsend (<a href="https://codepen.io/Eli-townsend">@Eli-townsend</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+    <p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </p>
+  </div>
+</div>

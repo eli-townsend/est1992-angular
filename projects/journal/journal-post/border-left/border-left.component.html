@@ -1,1 +1,82 @@
-{{ testCode }}
+<blog-header postTitle="Border-Left: Required;"></blog-header>
+
+<div class="row">
+  <div class="twelve columns blog-content">
+    <p>
+      Have you ever viewed a website with chicken pox? A form on a web page with numerous red required field asterisks or alternatively labeling fields that are optional when required fields outnumber optional fields. At the company I work for, we stumbled upon this issue in the modernization phase from AS400 to Java Web Applications. As UI/UX designers, we did not want our applications to have chicken pox. Our forms were heavy with several required and optional fields.
+    </p>
+
+    <p>
+      We designed a solution by taking advantage of the border-left property in CSS (<a href="https://www.w3schools.com/cssref/pr_border-left.asp" target="_blank">W3Schools</a>). On input fields that are required (by class name or required boolean value) we placed the border-left property with 3 pixels of solid border instead of using an asterisk.
+    </p>
+
+    <div class="row">
+      <div class="six columns">
+        <img src="../../assets/images/border-left01.png" alt="iphone-initial" height="655px" width="375px" />
+      </div>
+
+      <div class="six columns">
+        <img src="../../assets/images/border-left02.png" alt="non-required" height="655px" width="375px" />
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+
+    <p>
+      <code class="block">
+        {{ borderLeftHTML }}
+      </code>
+    </p>
+
+    <p>
+      In CSS, this is achievable by calling the required class selector <code>required</code> or by calling the pseudo class selector <code>:required</code>. To add interactivity and provide the user informative feedback &#8211; once the cursor was focused into the input, we changed the border-left property from 3 pixels to 6 pixels.
+    </p>
+
+    <div class="row">
+      <div class="six columns">
+        <img src="../../assets/images/border-left03.png" alt="iphone-focus" height="655px" width="375px" />
+      </div>
+
+      <div class="six columns">&nbsp;</div>
+    </div>
+
+    <div class="clear"></div>
+
+    <p> 
+      While this works for most users we wanted to make a note of accessibility about this solution. For example, if a user were to have a form of color blindness, you will need to vary the color so that it may be easily distinguishable from the rest of the input border, background color or any other styles that might be applied to your inputs. We will also put a transition on the initial state of the input so once on focus, there will be 0.3 seconds time to transition from 3 to 6 pixels.
+    </p>
+
+    <p>
+      <code class="block">
+        {{borderLeftCSS}}
+      </code>
+    </p>
+
+    <p>
+      If you use certain front-end frameworks, they will showcase errors, warnings, or success states differently, whether that be background color changed, border changed, etc. As a standard, we created this to work with validation so depending on which state the input is in, the border-left will depict that state with green for success or red for error. If the user is already aware of the border-left changing dynamically through validation, it gives users a sense of standard and consistent feedback throughout the process. 
+    </p>
+
+    <div class="row">
+      <div class="six columns">
+        <img src="../../assets/images/border-left04.png" alt="iphone-success" height="655px" width="375px" />
+      </div>
+
+      <div class="six columns">
+        <img src="../../assets/images/border-left05.png" alt="iphone-error" height="655px" width="375px" />
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <p data-height="400" data-theme-id="0" data-slug-hash="QqNEpy" data-default-tab="result" data-user="Eli-townsend" data-embed-version="2" data-pen-title="Border-Left Inputs" class="codepen">See the Pen <a href="https://codepen.io/Eli-townsend/pen/QqNEpy/">Border-Left Inputs</a> by Elijah Townsend (<a href="https://codepen.io/Eli-townsend">@Eli-townsend</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+    <p>
+      <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </p>
+
+    <p>
+      I would love to hear your input on this topic and see what everyone else has done as a solution to the chicken pox.
+    </p>
+  </div>
+</div>

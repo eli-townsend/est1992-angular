@@ -17,6 +17,7 @@ import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox
 import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
 import { WorkshopBlurbComponent } from '../../projects/est-components/workshop-blurb/workshop-blurb.component';
 import { EstRedesignTwentyOneComponent } from '../../projects/workshop/est-projects/est-redesign-twenty-one/est-redesign-twenty-one.component';
+import { BlogHeaderComponent } from '../../projects/est-components/blog-header/blog-header.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EstRedesignTwentyOneComponent } from '../../projects/workshop/est-proje
     FlexboxNavComponent,
     WorkRemoteComponent,
     WorkshopBlurbComponent,
-    EstRedesignTwentyOneComponent
+    EstRedesignTwentyOneComponent,
+    BlogHeaderComponent
   ],
   imports: [
     BrowserModule,

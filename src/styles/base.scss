@@ -1,0 +1,137 @@
+body {
+  background: $white;
+  color: $light-grey;
+  font-family: gt_walsheim_regular;
+  padding: 1em 2em;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/*** SECTIONS ***/
+
+a.button-white {
+  border: 2px solid $black;
+  background: $white;
+  color: $active;
+  width: auto;
+  padding: 12px 20px;
+  border-radius: $border-radius-base;
+}
+
+button, a.button {
+  background: $white;
+  border: 5px solid $black;
+  color: $black;
+  width: auto;
+  padding: 12px 20px;
+  border-radius: $border-radius-base;
+  text-decoration: none;
+}
+
+button:hover, a.button:hover {
+  background: $black;
+  color: $white;
+}
+
+a.button.secondary {
+  background: $active;
+  color: $black;
+  width: auto;
+  padding: 12px 20px;
+  border-radius: $border-radius-base;
+}
+
+a.button.secondary:hover {
+  background: $active;
+  color: $black;
+}
+
+/*** MEDIA ***/
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $est-percent-100;
+  -webkit-transform: translate3d(0, -50px, 0);
+  -ms-transform: translate3d(0, -50px, 0);
+  transform: translate3d(0, -50px, 0);
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -ms-transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+  z-index: 99999;
+}
+
+.pace.pace-active {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.pace .pace-progress {
+  display: block;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: $est-percent-100;
+  width: $est-percent-100;
+  height: 10px;
+  background: $active;
+  pointer-events: none;
+}
+
+img {
+  width: $est-percent-100;
+  height: auto;
+}
+
+img.max-img {
+  margin-top: 100px;
+  border-top: 3px solid $black;
+}
+
+.grayscale-hover>.one-half.columns {
+  margin-bottom: 2em;
+}
+
+.grayscale-hover img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  width: $est-percent-100;
+  height: auto;
+}
+
+.grayscale-hover img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/*** CODE ***/
+
+code{
+  background: $light-grey; 
+  color:$black; 
+  border-radius: $border-radius-base; 
+  padding: 2px 6px;
+}
+
+p > code.block{
+  display: block;
+  color: #209ddb;
+  background: $black;
+  width: 100%; 
+  height:auto; 
+  margin: 15px 0;
+  padding:15px;
+}
+
+.clear {
+  clear: both;
+}
