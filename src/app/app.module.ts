@@ -10,10 +10,14 @@ import { EstFooterComponent } from './est-footer/est-footer.component';
 import { EstHeaderComponent } from './est-header/est-header.component';
 import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
 import { BlogBlurbComponent } from '../../projects/est-components/blog-blurb/blog-blurb.component';
-// import { BorderLeftComponent } from '../../projects/journal/journal-post/border-left/border-left.component';
-// import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/code-ws.component';
-// import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
-// import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
+import { WorkshopComponent } from '../../projects/workshop/workshop.component';
+import { BorderLeftComponent } from '../../projects/journal/journal-post/border-left/border-left.component';
+import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/code-ws.component';
+import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
+import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
+import { WorkshopBlurbComponent } from '../../projects/est-components/workshop-blurb/workshop-blurb.component';
+import { EstRedesignTwentyOneComponent } from '../../projects/workshop/est-projects/est-redesign-twenty-one/est-redesign-twenty-one.component';
+import { BlogHeaderComponent } from '../../projects/est-components/blog-header/blog-header.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +29,14 @@ import { BlogBlurbComponent } from '../../projects/est-components/blog-blurb/blo
     JournalComponent,
     PageNotFoundComponent,
     BlogBlurbComponent,
-    // BorderLeftComponent,
-    // CodeWsComponent,
-    // FlexboxNavComponent,
-    // WorkRemoteComponent
+    WorkshopComponent,
+    BorderLeftComponent,
+    CodeWsComponent,
+    FlexboxNavComponent,
+    WorkRemoteComponent,
+    WorkshopBlurbComponent,
+    EstRedesignTwentyOneComponent,
+    BlogHeaderComponent
   ],
   imports: [
     BrowserModule,

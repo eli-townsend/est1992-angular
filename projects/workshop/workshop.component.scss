@@ -1,0 +1,34 @@
+@import '../../src/styles.scss';
+
+a {
+  background: none;
+
+  &:hover {
+    background: none;
+    box-shadow: none;
+  }
+}
+
+hr {
+  background: $black;
+  border-style: none;
+  height: 3px;
+}
+
+.color-scheme-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.color-scheme-list>li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+li.circular-color {
+  border-radius: 50%;
+  border: 1px solid $black;
+  width: 50px;
+  height: 50px;
+}

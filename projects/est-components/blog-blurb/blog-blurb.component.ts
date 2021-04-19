@@ -10,7 +10,7 @@ export class BlogBlurbComponent implements OnInit {
   @Input() blogTitle: string;
   @Input() blogDate: string;
   @Input() blogBlurb: string;
-  @Input() blogLink: string;
+  @Input() blogArticle: string;
 
 
   constructor() { }
