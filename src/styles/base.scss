@@ -135,3 +135,9 @@ p > code.block{
 .clear {
   clear: both;
 }
+
+@media (max-width: 500px) {
+  body{
+    padding: 0;
+  }
+}
