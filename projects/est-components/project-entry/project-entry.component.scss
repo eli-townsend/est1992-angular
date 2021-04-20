@@ -1,17 +1,9 @@
-@import '../../src/styles.scss';
-
-hr {
-  background: $black;
-  border-style: none;
-  height: 3px;
-}
-
 h2, h3, h4, h5, h6 {
   font-size: 1.2em;
 }
 
 h1 {
-  margin-bottom: 1em;
+  margin-bottom: 16px;
 }
 
 h5 {
@@ -38,4 +30,3 @@ p {
     height: 5px;
   }
 }
-
