@@ -1,8 +1,8 @@
 @import '../../src/styles.scss';
 
 h1.mi-nombre {
-  font-size: 9.25rem;
-  margin-bottom: -5rem;
+  font-size: 9.25em;
+  margin-bottom: -5em;
   position: relative;
   z-index: 2;
 }
@@ -13,30 +13,30 @@ img.foto-de-viaje {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 6em;
 }
 
 h3 {
-  font-size: 4rem;
-  line-height: 6rem;
+  font-size: 4em;
+  line-height: 6em;
 
   &.donde-esta {
     border-top: 10px solid $black;
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 8em;
+    line-height: 8em;
     margin-top: 35%;
     text-align: right;
   }
 }
 
 h4 {
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 3em;
+  line-height: 5em;
 
   &.bicicletas {
     border-top: 10px solid $black;
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 8em;
+    line-height: 8em;
     margin-top: 35%;
     text-align: left;
   }
@@ -46,20 +46,20 @@ img.foto-de-bicicletas {
   width: 50%;
   height: auto;
   float: right;
-  margin-bottom: -10rem;
-  padding-left: 2rem;
-  padding-bottom: 9rem;
+  margin-bottom: -10em;
+  padding-left: 2em;
+  padding-bottom: 9em;
 }
 
 h5 {
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 3em;
+  line-height: 5em;
   width: 75%;
 
   &.contacto {
     border-top: 10px solid $black;
-    font-size: 8rem;
-    line-height: 8rem;
+    font-size: 8em;
+    line-height: 8em;
     margin-top: 35%;
     text-align: center;
     width: 100%;
@@ -68,15 +68,15 @@ h5 {
 
 .datos-de-contacto {
   clear: both;
-  font-size: 6rem;
-  line-height: 10rem;
+  font-size: 6em;
+  line-height: 10em;
   text-align: center;
 }
 
 @media (max-width: 500px) {
   h1.mi-nombre {
-    font-size: 4rem;
-    margin-bottom: -1.5rem;
+    font-size: 4em;
+    margin-bottom: -1.5em;
     position: relative;
     z-index: 2;
   }
@@ -87,30 +87,30 @@ h5 {
   }
   
   h2 {
-    font-size: 3rem;
+    font-size: 3em;
   }
   
   h3 {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 2em;
+    line-height: 4em;
   
     &.donde-esta {
       border-top: 10px solid $black;
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 3em;
+      line-height: 4em;
       margin-top: 35%;
       text-align: right;
     }
   }
   
   h4 {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 2em;
+    line-height: 4em;
   
     &.bicicletas {
       border-top: 10px solid $black;
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 3em;
+      line-height: 4em;
       margin-top: 35%;
       text-align: left;
     }
@@ -120,20 +120,20 @@ h5 {
     width: 100%;
     height: auto;
     float: right;
-    margin-bottom: -6rem;
-    padding-left: 2rem;
-    padding-bottom: 9rem;
+    margin-bottom: -6em;
+    padding-left: 2em;
+    padding-bottom: 9em;
   }
   
   h5 {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1em;
+    line-height: 1.5em;
     width: 75%;
   
     &.contacto {
       border-top: 10px solid $black;
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 3em;
+      line-height: 4em;
       margin-top: 35%;
       text-align: center;
       width: 100%;
@@ -142,8 +142,8 @@ h5 {
   
   .datos-de-contacto {
     clear: both;
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 2em;
+    line-height: 4em;
     text-align: center;
   }
 }

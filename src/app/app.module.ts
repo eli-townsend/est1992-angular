@@ -18,6 +18,8 @@ import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-re
 import { WorkshopBlurbComponent } from '../../projects/est-components/workshop-blurb/workshop-blurb.component';
 import { EstRedesignTwentyOneComponent } from '../../projects/workshop/est-projects/est-redesign-twenty-one/est-redesign-twenty-one.component';
 import { BlogHeaderComponent } from '../../projects/est-components/blog-header/blog-header.component';
+import { MeatCampChurchComponent } from '../../projects/workshop/est-projects/meat-camp-church/meat-camp-church.component';
+import { ProjectEntryComponent } from '../../projects/est-components/project-entry/project-entry.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { BlogHeaderComponent } from '../../projects/est-components/blog-header/b
     WorkRemoteComponent,
     WorkshopBlurbComponent,
     EstRedesignTwentyOneComponent,
-    BlogHeaderComponent
+    BlogHeaderComponent,
+    MeatCampChurchComponent,
+    ProjectEntryComponent
   ],
   imports: [
     BrowserModule,

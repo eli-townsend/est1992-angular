@@ -1,34 +1,41 @@
 @import '../../src/styles.scss';
 
-a {
-  background: none;
-
-  &:hover {
-    background: none;
-    box-shadow: none;
-  }
-}
-
 hr {
   background: $black;
   border-style: none;
   height: 3px;
 }
 
+h2, h3, h4, h5, h6 {
+  font-size: 1.2em;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+h5 {
+  margin-top: 0;
+}
+
+h6 {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 600;
+}
+
 .color-scheme-list {
   list-style: none;
-  margin: 0;
+  margin: 0 0 4em 0;
   padding: 0;
+
+   li {
+    display: inline-block;
+    width: 33.33%;
+    height: 5px;
+  }
 }
 
-.color-scheme-list>li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-li.circular-color {
-  border-radius: 50%;
-  border: 1px solid $black;
-  width: 50px;
-  height: 50px;
-}

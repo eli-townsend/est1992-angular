@@ -8,6 +8,7 @@ import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/cod
 import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
 import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
 import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
+import { MeatCampChurchComponent } from '../../projects/workshop/est-projects/meat-camp-church/meat-camp-church.component';
 
 const routes: Routes = [
   { 
@@ -56,6 +57,12 @@ const routes: Routes = [
     path: 'workshop', 
     component: WorkshopComponent, 
     data: {title: 'Est.1992 - Workshop'} 
+  },
+  
+  { 
+    path: 'meatcampchurch', 
+    component: MeatCampChurchComponent, 
+    data: {title: 'Est.1992 - Workshop - Meat Camp Church'} 
   },
 
   {

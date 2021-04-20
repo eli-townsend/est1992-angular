@@ -5,20 +5,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   margin-bottom: 3em;
 
   &.center {
-    font-size: 4rem !important;
+    font-size: 4em !important;
     margin-top: 2em;
   }
 }
 
 h3.donde-esta {
   border-top: 10px solid $black;
-  font-size: 8rem;
-  line-height: 8rem;
-  margin-top: 2rem;
+  font-size: 8em;
+  line-height: 8em;
+  margin-top: 2em;
   text-align: left;
 }
 
@@ -46,19 +46,23 @@ p {
   font-style: normal; 
   font-variant: normal; 
   font-weight: 400;
-  line-height: 2.5rem;
+  line-height: 2.5em;
 
   .tiny {
     font-weight: 100;
   }
 }
 
+.tools {
+  font-size: 1.4em;
+}
+
 @media (max-width: 500px) {
   h3.donde-esta {
     border-top: 10px solid $black;
-    font-size: 3rem;
-    line-height: 3rem;
-    margin-top: 2rem;
+    font-size: 3em;
+    line-height: 3em;
+    margin-top: 2em;
     text-align: left;
   }
 }
