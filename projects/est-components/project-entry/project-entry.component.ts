@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-project-entry',
+  selector: 'est-project-entry',
   templateUrl: './project-entry.component.html',
   styleUrls: ['./project-entry.component.scss']
 })

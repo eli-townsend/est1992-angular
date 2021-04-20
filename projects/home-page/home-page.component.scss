@@ -2,7 +2,7 @@
 
 h1.mi-nombre {
   font-size: 9.25em;
-  margin-bottom: -5em;
+  margin-bottom: -1em;
   position: relative;
   z-index: 2;
 }
@@ -18,12 +18,11 @@ h2 {
 
 h3 {
   font-size: 4em;
-  line-height: 6em;
+  line-height: 1.5;
 
   &.donde-esta {
     border-top: 10px solid $black;
     font-size: 8em;
-    line-height: 8em;
     margin-top: 35%;
     text-align: right;
   }
@@ -31,12 +30,11 @@ h3 {
 
 h4 {
   font-size: 3em;
-  line-height: 5em;
+  line-height: 1.5;
 
   &.bicicletas {
     border-top: 10px solid $black;
     font-size: 8em;
-    line-height: 8em;
     margin-top: 35%;
     text-align: left;
   }
@@ -53,13 +51,11 @@ img.foto-de-bicicletas {
 
 h5 {
   font-size: 3em;
-  line-height: 5em;
   width: 75%;
 
   &.contacto {
     border-top: 10px solid $black;
     font-size: 8em;
-    line-height: 8em;
     margin-top: 35%;
     text-align: center;
     width: 100%;
@@ -69,7 +65,7 @@ h5 {
 .datos-de-contacto {
   clear: both;
   font-size: 6em;
-  line-height: 10em;
+  line-height: 2em;
   text-align: center;
 }
 
@@ -92,12 +88,12 @@ h5 {
   
   h3 {
     font-size: 2em;
-    line-height: 4em;
+    line-height: 1.5em;
   
     &.donde-esta {
       border-top: 10px solid $black;
       font-size: 3em;
-      line-height: 4em;
+      line-height: 1.5em;
       margin-top: 35%;
       text-align: right;
     }
@@ -105,12 +101,12 @@ h5 {
   
   h4 {
     font-size: 2em;
-    line-height: 4em;
+    line-height: 1.5em;
   
     &.bicicletas {
       border-top: 10px solid $black;
       font-size: 3em;
-      line-height: 4em;
+      line-height: 1.5em;
       margin-top: 35%;
       text-align: left;
     }
@@ -143,7 +139,7 @@ h5 {
   .datos-de-contacto {
     clear: both;
     font-size: 2em;
-    line-height: 4em;
+    line-height: 2em;
     text-align: center;
   }
 }
