@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeatCampChurchComponent implements OnInit {
 
-  projectOneColor = "#6796da";
-  projectTwoColor = "#f3f3f3";
-  projectThreeColor = "#432";
-
   constructor() { }
 
   ngOnInit(): void {
