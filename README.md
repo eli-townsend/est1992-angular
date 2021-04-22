@@ -2,13 +2,16 @@
 
 [Website Link](http://established1992.com/)
 
-## SCSS Variables
+## Design Tokens
 
 ```bash
 $white: #FFFFFF;
+$black: #000000;
 $base: #BFBFBF;
 $active: #ffff00;
 $light-grey: #CCCCCC;
+$est-percent-100: 100%;
+$border-radius-base: 5px;
 ```
 
 
