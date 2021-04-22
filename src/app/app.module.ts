@@ -16,10 +16,17 @@ import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/cod
 import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
 import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
 import { WorkshopBlurbComponent } from '../../projects/est-components/workshop-blurb/workshop-blurb.component';
-import { EstRedesignTwentyOneComponent } from '../../projects/workshop/est-projects/est-redesign-twenty-one/est-redesign-twenty-one.component';
 import { BlogHeaderComponent } from '../../projects/est-components/blog-header/blog-header.component';
 import { MeatCampChurchComponent } from '../../projects/workshop/est-projects/meat-camp-church/meat-camp-church.component';
 import { ProjectEntryComponent } from '../../projects/est-components/project-entry/project-entry.component';
+import { OdflComponent } from '../../projects/workshop/est-projects/odfl/odfl.component';
+import { WhatIsCyclingComponent } from '../../projects/workshop/est-projects/what-is-cycling/what-is-cycling.component';
+import { OdMoveComponent } from '../../projects/workshop/est-projects/od-move/od-move.component';
+import { BranchBankingTrustComponent } from '../../projects/workshop/est-projects/branch-banking-trust/branch-banking-trust.component';
+import { FixieAppComponent } from '../../projects/workshop/est-projects/fixie-app/fixie-app.component';
+import { TapplesBankingComponent } from '../../projects/workshop/est-projects/tapples-banking/tapples-banking.component';
+import { HorizontalTimelineComponent } from '../../projects/workshop/est-projects/horizontal-timeline/horizontal-timeline.component';
+import { EstablishedSixteenComponent } from '../../projects/workshop/est-projects/established-sixteen/established-sixteen.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +44,17 @@ import { ProjectEntryComponent } from '../../projects/est-components/project-ent
     FlexboxNavComponent,
     WorkRemoteComponent,
     WorkshopBlurbComponent,
-    EstRedesignTwentyOneComponent,
     BlogHeaderComponent,
     MeatCampChurchComponent,
-    ProjectEntryComponent
+    ProjectEntryComponent,
+    OdflComponent,
+    WhatIsCyclingComponent,
+    OdMoveComponent,
+    BranchBankingTrustComponent,
+    FixieAppComponent,
+    TapplesBankingComponent,
+    HorizontalTimelineComponent,
+    EstablishedSixteenComponent
   ],
   imports: [
     BrowserModule,
