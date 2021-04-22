@@ -1,1 +1,10 @@
 @import "../../workshop.component.scss";
+
+ol {
+  line-height: 1.5;
+}
+
+ul.no-bullet {
+  list-style: none;
+  line-height: 2;
+}
