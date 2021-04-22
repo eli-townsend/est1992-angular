@@ -46,6 +46,12 @@ a.button.secondary:hover {
   color: $black;
 }
 
+a.back-to {
+  position: fixed;
+  left: 2em;
+  top: 2em;
+}
+
 /*** MEDIA ***/
 
 .pace {

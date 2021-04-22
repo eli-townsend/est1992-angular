@@ -11,9 +11,6 @@ export class ProjectEntryComponent implements OnInit {
   @Input() projectLink: string;
   @Input() projectLinkName: string;
   @Input() projectYear: string;
-  @Input() projectColorOne: string;
-  @Input() projectColorTwo: string;
-  @Input() projectColorThree: string;
 
   constructor() { }
 

@@ -1,17 +1,13 @@
-<a routerLink="../workshop">Back to Workshop</a>
+<a routerLink="../workshop" class="back-to">Back to Workshop</a>
 
 <div class="row">
   <div class="twelve columns">
     <h1 class="center">{{projectTitle}}</h1>
 
     <div class="center">
-      <a href="{{projectLink}}" target="_blank">{{projectLinkName}}</a>- {{projectYear}}
+      <a href="{{projectLink}}" target="_blank">{{projectLinkName}}</a> - {{projectYear}}
     </div>
 
-    <ul class="color-scheme-list">
-      <li [ngStyle]="{'background': projectColorOne}"></li>
-      <li [ngStyle]="{'background': projectColorTwo}"></li>
-      <li [ngStyle]="{'background': projectColorThree}"></li>
-    </ul>
+    <ng-content></ng-content>
   </div>
 </div>
