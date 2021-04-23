@@ -6,10 +6,13 @@ iframe {
 }
 
 ol {
+  font-size: 1.2em;
   line-height: 1.5;
 }
 
-ul.no-bullet {
+.row > ul.no-bullet {
+  font-size: 1.2em;
   list-style: none;
   line-height: 2;
+  text-align: center;
 }
