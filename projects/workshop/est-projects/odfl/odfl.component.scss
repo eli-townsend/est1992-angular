@@ -1,8 +1,17 @@
 @import "../../workshop.component.scss";
 
-img.case-study-img, img.case-study-img + figcaption {
+.case-study-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+
+  + figcaption {
+    @extend .case-study-img;
+  }
+
+  &__height {
+    @extend .case-study-img;
+    max-height: 600px; 
+    width: auto;
+  }
 }
