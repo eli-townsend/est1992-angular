@@ -41,3 +41,18 @@ p {
   }
 }
 
+.case-study-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  + figcaption {
+    @extend .case-study-img;
+  }
+
+  &__height {
+    @extend .case-study-img;
+    max-height: 600px; 
+    width: auto;
+  }
+}
