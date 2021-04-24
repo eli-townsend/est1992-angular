@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from '../../projects/home-page/home-page.component';
 import { JournalComponent } from '../../projects/journal/journal.component';
 import { EstComponentsComponent } from '../../projects/est-components/est-components.component';
-import { EstFooterComponent } from './est-footer/est-footer.component';
 import { EstHeaderComponent } from './est-header/est-header.component';
 import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
 import { BlogBlurbComponent } from '../../projects/est-components/blog-blurb/blog-blurb.component';
@@ -33,7 +32,6 @@ import { EstablishedSixteenComponent } from '../../projects/workshop/est-project
     AppComponent,
     HomePageComponent,
     EstComponentsComponent,
-    EstFooterComponent,
     EstHeaderComponent,
     JournalComponent,
     PageNotFoundComponent,

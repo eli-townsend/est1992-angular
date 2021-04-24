@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-fixie-app',
   templateUrl: './fixie-app.component.html',
-  styleUrls: ['./fixie-app.component.scss']
+  styleUrls: ['../../workshop.component.scss']
 })
 export class FixieAppComponent implements OnInit {
 
