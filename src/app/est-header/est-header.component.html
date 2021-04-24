@@ -11,8 +11,8 @@
 
 <div *ngIf="navShow" class="main-navigation" [ngClass]="{'open' : navShow}">
   <div class="nav-links">
-    <a routerLink="/home" routerLinkActive="active-nav-selection">Home</a>
-    <a routerLink="/workshop" routerLinkActive="active-nav-selection">Workshop</a>
-    <a routerLink="/journal" routerLinkActive="active-nav-selection">Journal</a>
+    <a routerLink="/home" routerLinkActive="active-nav-selection" (click)="navToggle()">Home</a>
+    <a routerLink="/workshop" routerLinkActive="active-nav-selection" (click)="navToggle()">Workshop</a>
+    <a routerLink="/journal" routerLinkActive="active-nav-selection" (click)="navToggle()">Journal</a>
   </div>
 </div>
