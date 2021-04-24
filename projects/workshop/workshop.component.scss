@@ -57,3 +57,31 @@ p {
     width: auto;
   }
 }
+
+video {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+
+ul {
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+ol {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.row > ul.no-bullet {
+  font-size: 1.2em;
+  list-style: none;
+  line-height: 2;
+  text-align: center;
+}
