@@ -69,6 +69,37 @@ h5 {
   text-align: center;
 }
 
+@media (max-width: 1024px) {
+  h1.mi-nombre {
+    font-size: 6em;
+    margin-bottom: -.5em;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+
+  h3 {
+    font-size: 3em;
+  }
+
+  h3.donde-esta {
+    font-size: 5em;
+  }
+
+  h4.bicicletas {
+    font-size: 5em;
+  }
+
+  h5.contacto {
+    font-size: 5em;
+  }
+
+  .datos-de-contacto {
+    font-size: 3em;
+  }
+}
+
 @media (max-width: 500px) {
   h1.mi-nombre {
     font-size: 4em;
