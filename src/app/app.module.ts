@@ -26,6 +26,7 @@ import { FixieAppComponent } from '../../projects/workshop/est-projects/fixie-ap
 import { TapplesBankingComponent } from '../../projects/workshop/est-projects/tapples-banking/tapples-banking.component';
 import { HorizontalTimelineComponent } from '../../projects/workshop/est-projects/horizontal-timeline/horizontal-timeline.component';
 import { EstablishedSixteenComponent } from '../../projects/workshop/est-projects/established-sixteen/established-sixteen.component';
+import { EstProjectFigureComponent } from './est-project-figure/est-project-figure.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EstablishedSixteenComponent } from '../../projects/workshop/est-project
     FixieAppComponent,
     TapplesBankingComponent,
     HorizontalTimelineComponent,
-    EstablishedSixteenComponent
+    EstablishedSixteenComponent,
+    EstProjectFigureComponent
   ],
   imports: [
     BrowserModule,

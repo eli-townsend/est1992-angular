@@ -50,6 +50,7 @@ a.back-to {
   position: fixed;
   left: 2em;
   top: 2em;
+  z-index: 999;
 }
 
 /*** MEDIA ***/
@@ -147,6 +148,14 @@ p > code.block{
 
 @media (max-width: 500px) {
   body{
+    padding: 0;
+  }
+
+  code{
+    padding: 0;
+  }
+
+  p > code.block {
     padding: 0;
   }
 }
