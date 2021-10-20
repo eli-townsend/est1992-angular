@@ -17,6 +17,7 @@ import { FixieAppComponent } from '../../projects/workshop/est-projects/fixie-ap
 import { TapplesBankingComponent } from '../../projects/workshop/est-projects/tapples-banking/tapples-banking.component';
 import { HorizontalTimelineComponent } from '../../projects/workshop/est-projects/horizontal-timeline/horizontal-timeline.component';
 import { EstablishedSixteenComponent } from '../../projects/workshop/est-projects/established-sixteen/established-sixteen.component';
+import { TruistOlbComponent } from '../../projects/workshop/est-projects/truist-olb/truist-olb.component';
 
 const routes: Routes = [
   { 
@@ -119,6 +120,12 @@ const routes: Routes = [
     path: 'estsixteen', 
     component: EstablishedSixteenComponent, 
     data: {title: 'Est.1992 - Workshop - Established1992 2016'} 
+  },
+
+  { 
+    path: 'truist', 
+    component: TruistOlbComponent, 
+    data: {title: 'Est.1992 - Workshop - Truist Retail Web'} 
   },
 
   {
