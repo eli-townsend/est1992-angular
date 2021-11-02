@@ -4,16 +4,11 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from '../../projects/home-page/home-page.component';
-import { JournalComponent } from '../../projects/journal/journal.component';
 import { EstComponentsComponent } from '../../projects/est-components/est-components.component';
 import { EstHeaderComponent } from './est-header/est-header.component';
 import { PageNotFoundComponent } from '../../projects/page-not-found/page-not-found.component';
 import { BlogBlurbComponent } from '../../projects/est-components/blog-blurb/blog-blurb.component';
 import { WorkshopComponent } from '../../projects/workshop/workshop.component';
-import { BorderLeftComponent } from '../../projects/journal/journal-post/border-left/border-left.component';
-import { CodeWsComponent } from '../../projects/journal/journal-post/code-ws/code-ws.component';
-import { FlexboxNavComponent } from '../../projects/journal/journal-post/flexbox-nav/flexbox-nav.component';
-import { WorkRemoteComponent } from '../../projects/journal/journal-post/work-remote/work-remote.component';
 import { WorkshopBlurbComponent } from '../../projects/est-components/workshop-blurb/workshop-blurb.component';
 import { BlogHeaderComponent } from '../../projects/est-components/blog-header/blog-header.component';
 import { MeatCampChurchComponent } from '../../projects/workshop/est-projects/meat-camp-church/meat-camp-church.component';
@@ -28,6 +23,7 @@ import { HorizontalTimelineComponent } from '../../projects/workshop/est-project
 import { EstablishedSixteenComponent } from '../../projects/workshop/est-projects/established-sixteen/established-sixteen.component';
 import { EstProjectFigureComponent } from '../../projects/est-components/est-project-figure/est-project-figure.component';
 import { TruistOlbComponent } from '../../projects/workshop/est-projects/truist-olb/truist-olb.component';
+import { FindcenterComponent } from '../../projects/workshop/est-projects/findcenter/findcenter.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +31,9 @@ import { TruistOlbComponent } from '../../projects/workshop/est-projects/truist-
     HomePageComponent,
     EstComponentsComponent,
     EstHeaderComponent,
-    JournalComponent,
     PageNotFoundComponent,
     BlogBlurbComponent,
     WorkshopComponent,
-    BorderLeftComponent,
-    CodeWsComponent,
-    FlexboxNavComponent,
-    WorkRemoteComponent,
     WorkshopBlurbComponent,
     BlogHeaderComponent,
     MeatCampChurchComponent,
@@ -56,7 +47,8 @@ import { TruistOlbComponent } from '../../projects/workshop/est-projects/truist-
     HorizontalTimelineComponent,
     EstablishedSixteenComponent,
     EstProjectFigureComponent,
-    TruistOlbComponent
+    TruistOlbComponent,
+    FindcenterComponent
   ],
   imports: [
     BrowserModule,

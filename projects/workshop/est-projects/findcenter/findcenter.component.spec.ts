@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CodeWsComponent } from './code-ws.component';
+import { FindcenterComponent } from './findcenter.component';
 
-describe('CodeWsComponent', () => {
-  let component: CodeWsComponent;
-  let fixture: ComponentFixture<CodeWsComponent>;
+describe('FindcenterComponent', () => {
+  let component: FindcenterComponent;
+  let fixture: ComponentFixture<FindcenterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CodeWsComponent ]
+      declarations: [ FindcenterComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CodeWsComponent);
+    fixture = TestBed.createComponent(FindcenterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

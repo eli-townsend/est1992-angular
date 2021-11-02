@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-truist-olb',
-  templateUrl: './truist-olb.component.html',
+  selector: 'app-findcenter',
+  templateUrl: './findcenter.component.html',
   styleUrls: ['../../workshop.component.scss']
 })
-export class TruistOlbComponent implements OnInit {
+export class FindcenterComponent implements OnInit {
 
   constructor() { }
 
