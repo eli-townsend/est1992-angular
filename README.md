@@ -2,7 +2,7 @@
 
 [Website Link](http://established1992.com/)
 
-## Design Tokens
+## Design Variables
 
 ```bash
 $white: #FFFFFF;
