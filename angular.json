@@ -124,7 +124,5 @@
         }
       }
     }},
-  "cli": {
-    "analytics": "4a08cfd3-3772-412e-85fa-02c5a3f26104"
-  }
+  "defaultProject": "est1992-ang"
 }
