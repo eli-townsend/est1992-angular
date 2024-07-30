@@ -1,6 +1,6 @@
 # Established 1992
 
-[Website Link](http://established1992.com/)
+[Website Link](http://established1992.com/){:target="_blank" rel="noopener"}
 
 ## Design Variables
 
